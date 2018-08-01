@@ -1,0 +1,11 @@
+Hi, Here I introduce a simple method to merge difference PDF file into one! A very simple and  useful tool named pdftk!
+
+1 merge the whole file
+pdftk *.pdf cat output all.pdf
+e.g. pdftk 1.pdf 2.pdf 3.pdf cat output 123.pdf
+
+2 select pages to merge
+e.g. pdftk A=1.pdf B=2.pdf C=pdf cat A1-2 B2-3 C3 output abc.pdf
+
+3 rotate the frist page
+e.g. pdftk in.pdf cat 1E 2-end output out.pdf
